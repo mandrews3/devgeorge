@@ -1,49 +1,114 @@
-<h1>
-  <center> <strong>🦭 Calroies Consumed 🦭 </strong></center>
-</h1>
-<p>This is a calorie counter for each day of the year 2025. It allows you to input you protien, fats, and carbs in grams to out put your total amount of calories eaten that meal.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🦭 Calories Consumed 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-<img src="IMG_5917.JPG" alt="Picture of Wireframe" width="200" height="200"><br><br>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MLA</a> <!-- Your initials as logo -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<a href="https://www.omnicalculator.com/conversion/grams-to-calories">Grams to calroies calculator</a><br>
-<br>
-<form>
-  <label for="date">What is today's date?</label><br>
-  <input type="date" id="date" name="date"><br>
-  <label for="timeEating">What time are you eating this food?</label><br>
-  <input type="time" id="timeEating" name="timeEating"><br>
-  <label for="typeofFood">What type of food are you eating?
-  </label><br>
-  <input type="typeofFood" id="typeofFood" name="typeofFood"><br>
-  <label for="carbsGrams">How many grams of carbohydrates is in this food</label><br>
-  <input type="carbsGrams" id="carbsGrams" name="carbsGrams"><br>
-  <label for="protienGrams">How many grams of protien is in the food</label><br>
-  <input type="protienGrams" id="protienGrams" name="protienGrams"><br>
-  <label for="fatGrams">How many grams of fat are in this food</label><br>
-  <input type="fatGrams" id="fatGrams" name="fatGrams"><br>
-  <br><button id="saveCalories" class="btn btn-outline-primary">Save Options..</button>
-  <input type="reset" value="Reset">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Calories Consumed 2025</a> <!-- Page title -->
+          </li>
+        </ul>
+        <button class="btn btn-primary" type="button">Login</button> <!-- Login button -->
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Links
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://github.com/yourusername" target="_blank">My GitHub Profile</a></li>
+              <li><a class="dropdown-item" href="https://github.com/yourusername/yourrepo" target="_blank">Source Code Repo</a></li>
+              <li><a class="dropdown-item" href="https://validator.w3.org/nu/" target="_blank">Validator Results</a></li>
+              <li><a class="dropdown-item" href="https://wave.webaim.org/report#" target="_blank">Wave Accessibility Report</a></li>
+              <li><a class="dropdown-item" href="https://yourwireframepage.com" target="_blank">Wireframe</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <br><br><a href="https://www.nutritionadvance.com/types-of-food/">Visit a website containing types of food!</a>
-  <br><br><a href="https://health.clevelandclinic.org/how-many-calories-a-day-should-i-eat">How many calories you should be eating</a>
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <h1 class="text-center"><strong>🦭 Calories Consumed 🦭</strong></h1>
+    <p class="text-center">This is a calorie counter for each day of the year 2025. It allows you to input your protein, fats, and carbs in grams to output your total amount of calories eaten that meal.</p>
 
-  <br><br><br>
-  <h2>List of foods eaten in the year 2025</h2>
-  <br><br>
-  <ol>
-    <li>JAN 17, 2025. I am eating at 10:30am and I will be eating chicken with 20 grams of protien, 16 grams of carbs, and 8 grams of fat. My total calories is 216.</li>
-    <li> JAN 18, 2025. I am eating at 11:30am and I will be eating steak with 24 grams of protien, 10 grams of carbs, and 10 grams of fat. My total calories is 226.</li>
-    <li>JAN 19, 2025. I am eating at 1:30pm and I will be eating an apple with 1 grams of protien, and 8 grams of carbs, and 4 grams of fat. My total calories is 72.</li>
-  </ol>
-  <footer>
-    <p>Matthew Landon Andrews<br>
-      <a href="mailto:mandrews3@una.edu">mandrews3@una.edu</a>
-    </p>
+    <div class="text-center">
+      <img src="IMG_5917.JPG" alt="Picture of Wireframe" width="200" height="200" class="img-thumbnail mb-4">
+      <div>
+        <a href="https://www.omnicalculator.com/conversion/grams-to-calories" target="_blank" class="btn btn-secondary mb-3">Grams to Calories Calculator</a>
+      </div>
+    </div>
+
+    <form>
+      <div class="mb-3">
+        <label for="date" class="form-label">What is today's date?</label>
+        <input type="date" class="form-control" id="date" name="date">
+      </div>
+      <div class="mb-3">
+        <label for="timeEating" class="form-label">What time are you eating this food?</label>
+        <input type="time" class="form-control" id="timeEating" name="timeEating">
+      </div>
+      <div class="mb-3">
+        <label for="typeofFood" class="form-label">What type of food are you eating?</label>
+        <input type="text" class="form-control" id="typeofFood" name="typeofFood">
+      </div>
+      <div class="mb-3">
+        <label for="carbsGrams" class="form-label">How many grams of carbohydrates are in this food?</label>
+        <input type="number" class="form-control" id="carbsGrams" name="carbsGrams">
+      </div>
+      <div class="mb-3">
+        <label for="protienGrams" class="form-label">How many grams of protein are in the food?</label>
+        <input type="number" class="form-control" id="protienGrams" name="protienGrams">
+      </div>
+      <div class="mb-3">
+        <label for="fatGrams" class="form-label">How many grams of fat are in this food?</label>
+        <input type="number" class="form-control" id="fatGrams" name="fatGrams">
+      </div>
+
+      <button type="submit" id="saveCalories" class="btn btn-outline-primary">Save Entry</button>
+      <input type="reset" class="btn btn-outline-danger ms-2" value="Reset">
+    </form>
+
+    <div class="mt-5">
+      <a href="https://www.nutritionadvance.com/types-of-food/" class="btn btn-info me-2" target="_blank">Types of Food</a>
+      <a href="https://health.clevelandclinic.org/how-many-calories-a-day-should-i-eat" class="btn btn-info" target="_blank">Calorie Guidelines</a>
+    </div>
+
+    <h2 class="mt-5">List of Foods Eaten in 2025</h2>
+    <ol>
+      <li>JAN 17, 2025. Eating at 10:30am: Chicken (20g protein, 16g carbs, 8g fat) - 216 calories.</li>
+      <li>JAN 18, 2025. Eating at 11:30am: Steak (24g protein, 10g carbs, 10g fat) - 226 calories.</li>
+      <li>JAN 19, 2025. Eating at 1:30pm: Apple (1g protein, 8g carbs, 4g fat) - 72 calories.</li>
+    </ol>
+
+    <details class="mt-4">
+      <summary>About This Calorie Counter</summary>
+      <p>This tool tracks your daily calorie intake for the year 2025 based on the foods you eat. It helps you visualize your nutrition habits over time.</p>
+    </details>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="container p-4">
+      <p>© 2025 Matthew Landon Andrews</p>
+      <a href="mailto:mandrews3@una.edu" class="text-decoration-none">Email me</a>
+    </div>
   </footer>
-  <!-- This add on allows you to have a summary at the bottom of your page to understand the use of this web application -->
-  <details>
-    <summary>Calorie Counter</summary>
-    <p>This device is used to track your calories in order to show you what how much you eat throughout the year on a day to day basis</p>
-  </details>
 
-</form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
