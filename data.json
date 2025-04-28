@@ -1,1 +1,30 @@
 
+[
+  {
+    "date": "2025-01-17",
+    "time": "10:30 AM",
+    "food": "Chicken",
+    "protein": 20,
+    "carbs": 16,
+    "fat": 8,
+    "calories": 216
+  },
+  {
+    "date": "2025-01-18",
+    "time": "11:30 AM",
+    "food": "Steak",
+    "protein": 24,
+    "carbs": 10,
+    "fat": 10,
+    "calories": 226
+  },
+  {
+    "date": "2025-01-19",
+    "time": "1:30 PM",
+    "food": "Apple",
+    "protein": 1,
+    "carbs": 8,
+    "fat": 4,
+    "calories": 72
+  }
+]
