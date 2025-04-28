@@ -8,3 +8,23 @@ $(document).ready(function () {
     return "Not Ready!";
   }
 });
+let dataSet = [];
+
+
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    dataSet = data; 
+    displayData();  
+  })
+  .catch(error => console.error('Error loading data:', error));
+
+
+$("#exportData").on("click", function () {
+  console.log(JSON.stringify(dataSet, null, 2)); 
+});
+
+
+function displayData() {
+  
+}
